@@ -10,6 +10,10 @@ nav {
     padding: 0;
     margin: 0;
 }
+@media (max-width: 450px){
+    .lista {flex-wrap: wrap;
+    }
+}
 body{
     margin: 0;
     padding: 0;
@@ -34,16 +38,30 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-section{
+.sec-info{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
+@media (max-width: 1000px) {
+    .sec-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-info img{
+        margin-left: 0;
+    }
+ }
 
 .contenedor-info{
     width: 50%;
     align-items: center;
     
+}
+@media(max-width:1000px){
+    .contenedor-info{
+        width: 100%;
+    }
 }
 .contenedor-info img{
     width: 350px;
@@ -70,6 +88,7 @@ section{
     margin-left: 15%;
     font-size: medium;
 }
+
 .contenedor-imagen img{
     opacity: 70%;
 }
@@ -110,6 +129,16 @@ section{
     align-items: center;
     flex-wrap: wrap;
 }
+@media (max-width: 1050px){
+    .conteiner-logos{
+        width: 100%;
+       flex-direction: column; 
+    }
+    .logo {
+        width: 50%;
+    }
+    
+}
 .logo{
     width: 30%;
     box-shadow: rgb(0, 0, 0, 0.3) 2px 0px 17px 2px; 
@@ -146,6 +175,12 @@ section{
     justify-content: center;
     font-size: medium;
 }
+@media (max-width: 700px){
+    .logo button {
+        width: 80%;   
+        font-size: small;
+    }
+}
 .logo button:hover{
     color: red;
     background-color: white;
@@ -174,7 +209,6 @@ i:hover{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    height: 300px;
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
@@ -188,6 +222,12 @@ i:hover{
     display: inline-block;
     text-align: center;
     margin-bottom: 0;
+}
+@media (max-width:700px){
+    .conteiner-logos2 {
+       flex-direction: column;
+       width: 100%;
+    }
 }
 .texto-encima{
     position: absolute;
@@ -203,6 +243,11 @@ i:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media (max-width:700px){
+.logo2 {
+    width: 50%;
+}
 }
 .conteiner-logos2 p{
     color: red;
@@ -225,6 +270,11 @@ i:hover{
     color: red;
        
 }
+@media (max-width: 500px){
+    .empresa{
+        size: 60px;
+    }
+}
 .footer i:hover{
     color: darkred;
 }
@@ -244,6 +294,9 @@ i:hover{
     justify-content: space-around;
     margin-bottom: 50px;
 }
+@media (max-width:450px){
+    .empresas{flex-direction: column;}
+}
 .map-dir{
     display: flex;
     flex-direction: row;
@@ -253,11 +306,16 @@ i:hover{
     padding: 20px;
 
 }
+@media (max-width: 800px){
+    .map-dir{
+        flex-direction: column;
+        align-items: center;}
+    }
 .p-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: red;
+    color: rgb(139, 23, 23);
     font-size: x-large;
 }
 .logo-footer {
